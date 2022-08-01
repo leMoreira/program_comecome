@@ -38,11 +38,28 @@ btnAbrir.addEventListener('click',() => {
     btnAbrir.style.display="none";
 })
 
+let btnFechar = document.getElementById("fechar");
+btnFechar.addEventListener("click", ()=>{
+    let menu = document.querySelector(".menu");
+    menu.style.marginLeft="-70%";
+    let btnAbrir = document.getElementById("abrir");
+    btnAbrir.style.display = "block";
+    btnFechar.style.display= "none";
+
+})
+
 </script>
 
     </header>
 
-    <main></main>
+    <main>
+        <div class="container">
+            <div class="col-left">
+                <h2>Cardápio Pikantes</h2>
+            </div>
+            <div class="col-right"></div>
+        </div>
+    </main>
 
     <footer></footer>
 
